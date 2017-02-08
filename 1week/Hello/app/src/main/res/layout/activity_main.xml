@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.appal_000.hello.MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_green_light"
+        >
+
+        <TextView
+            android:text="자기소개 페이지"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="60dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray"
+            android:weightSum="1">
+            <ImageView
+                android:layout_width="123dp"
+                android:layout_height="126dp"
+                android:src="@drawable/photo" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="178dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:text="이름     이름을 입력해주세요.\n나이     나이를 입력해주세요.\n학교     학교를 입력해주세요.\n지원분야  지원분야를 입력해주세요."
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/black"
+        android:gravity="bottom|right"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="클릭!!"
+            android:id="@+id/Btn"
+            />
+    </LinearLayout>
+</LinearLayout>
