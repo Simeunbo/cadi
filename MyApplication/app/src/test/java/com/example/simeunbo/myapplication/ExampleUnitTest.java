@@ -1,4 +1,4 @@
-package com.example.appal_000.hello;
+package com.example.simeunbo.myapplication;
 
 import org.junit.Test;
 
